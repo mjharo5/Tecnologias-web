@@ -1,0 +1,26 @@
+
+/* Estilo para el contenedor del avatar */
+#foto-cliente-container {
+    width: 100px; 
+    height: 100px; 
+    border: 2px solid #007bff; 
+    border-radius: 50%; /* Esto le da la forma circular */
+    overflow: hidden; 
+    display: inline-block;
+    /* Necesitas estas dos líneas para centrar el contenido y asegurar la imagen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* APLICAR ESTILO A LA IMAGEN DENTRO DEL CONTENEDOR */
+#foto-cliente-container img {
+    width: 100%;       /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;      /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Asegura que la imagen no se distorsione al llenar el círculo */
+}
+
+/* Ejemplo de estilo adicional: hacer que el botón activo se vea más claro */
+.btn.active {
+    filter: brightness(115%);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5); /* Agrega un pequeño anillo de enfoque */
+}
